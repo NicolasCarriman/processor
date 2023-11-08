@@ -1,0 +1,32 @@
+@use '../styles/base'
+
+%message-base
+    padding: 0
+    width: auto
+    border-radius: 12px
+    height: auto
+    align-items: center
+    display: flex
+    justify-content: center
+
+.display-container
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 20%
+    section
+        background: base.$light 
+        width: 100%
+        height: 95%
+        border-radius: 12px
+        padding: 12px
+        ul
+            overflow: hidden
+            
+.first-message 
+    @extend %message-base
+    background: base.$primary-color
+
+.message 
+    @extend %message-base
+    background: transparent
